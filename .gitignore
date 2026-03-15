@@ -1,0 +1,4 @@
+.angular
+.vscode
+node_modules
+# go to ~/Documents/Work/vitrado/bestellung, check git history and analyze all the commits i`ve done there. Create a summary of what i worked upon , with separation of Devops, frontend, backend,  CI/CD in bestellung.md file. Do not include ticket numbers or branch names.

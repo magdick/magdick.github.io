@@ -1,0 +1,65 @@
+<section id="about" class="hero-section">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-tag">Full-Stack Developer</div>
+    <h1 class="hero-name">Magdici <span>Victor</span></h1>
+    <p class="hero-description">
+      Building scalable web platforms at <strong>Vitrado / Freenet Group</strong>.
+      Specialized in Angular SPAs, PHP backends, Go microservices, and DevOps infrastructure.
+      Contributor across 15+ repositories with 1700+ commits.
+    </p>
+    <div class="hero-metrics">
+      <div class="metric">
+        <span class="metric-value">15+</span>
+        <span class="metric-label">Repos</span>
+      </div>
+      <div class="metric">
+        <span class="metric-value">1700+</span>
+        <span class="metric-label">Commits</span>
+      </div>
+      <div class="metric">
+        <span class="metric-value">120+</span>
+        <span class="metric-label">Tickets</span>
+      </div>
+      <div class="metric">
+        <span class="metric-value">3</span>
+        <span class="metric-label">Languages</span>
+      </div>
+    </div>
+    <div class="hero-actions">
+      <button mat-flat-button class="btn-primary" (click)="scrollToWork()">
+        <mat-icon>code</mat-icon> View My Work
+      </button>
+      <button mat-stroked-button class="btn-secondary" (click)="scrollToContact()">
+        <mat-icon>mail</mat-icon> Contact Me
+      </button>
+    </div>
+  </div>
+  <div class="hero-graphic">
+    <div class="code-window">
+      <div class="window-bar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="filename">*.component.ts</span>
+      </div>
+      <pre class="code-body"><code><span class="c-decorator">&#64;Component</span><span class="c-punct">(&#123;</span>
+  <span class="c-key">selector</span><span class="c-punct">:</span> <span class="c-str">'app-advertiser'</span><span class="c-punct">,</span>
+  <span class="c-key">standalone</span><span class="c-punct">:</span> <span class="c-bool">true</span><span class="c-punct">,</span>
+  <span class="c-key">imports</span><span class="c-punct">:</span> <span class="c-punct">[</span>
+    <span class="c-type">MatCardModule</span><span class="c-punct">,</span>
+    <span class="c-type">MatTableModule</span><span class="c-punct">,</span>
+    <span class="c-type">MatDatepickerModule</span>
+  <span class="c-punct">]</span>
+<span class="c-punct">&#125;)</span>
+<span class="c-kw">export class</span> <span class="c-type">*Component</span> <span class="c-punct">&#123;</span>
+  <span class="c-key">user</span> <span class="c-punct">=</span> <span class="c-fn">signal</span><span class="c-punct">&lt;</span><span class="c-type">User</span> <span class="c-punct">|</span> <span class="c-kw">null</span><span class="c-punct">&gt;(</span><span class="c-kw">null</span><span class="c-punct">);</span>
+
+  <span class="c-fn">ngOnInit</span><span class="c-punct">() &#123;</span>
+    <span class="c-comment">// Reactive guard + auth flow</span>
+    <span class="c-kw">this</span><span class="c-punct">.</span><span class="c-fn">authService</span>
+      <span class="c-punct">.</span><span class="c-fn">getUser</span><span class="c-punct">()</span>
+      <span class="c-punct">.</span><span class="c-fn">subscribe</span><span class="c-punct">(</span><span class="c-key">u</span> <span class="c-punct">=&gt;</span> <span class="c-kw">this</span><span class="c-punct">.</span><span class="c-fn">user</span><span class="c-punct">.</span><span class="c-fn">set</span><span class="c-punct">(</span><span class="c-key">u</span><span class="c-punct">));</span>
+  <span class="c-punct">&#125;</span>
+<span class="c-punct">&#125;</span></code></pre>
+    </div>
+  </div>
+</section>

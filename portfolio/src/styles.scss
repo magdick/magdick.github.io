@@ -1,0 +1,67 @@
+/* You can add global styles to this file, and also import other style files */
+
+// ── Accent colours ─────────────────────────────────────────────────────────
+$vitrado-teal: #00bfa5;
+$vitrado-blue: #1f4e8c;
+$dark-surface: #161b22;
+$dark-border: #30363d;
+$code-bg: #1e2533;
+$text-primary: #e6edf3;
+$text-muted: #8b949e;
+
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background: #0d1117;
+  color: $text-primary;
+}
+
+// ── Utility ────────────────────────────────────────────────────────────────
+.section {
+  padding: 80px 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: $text-primary;
+
+  span { color: $vitrado-teal; }
+}
+
+.section-subtitle {
+  color: $text-muted;
+  margin-bottom: 40px;
+  font-size: 1rem;
+}
+
+.divider {
+  width: 60px;
+  height: 4px;
+  background: $vitrado-teal;
+  border-radius: 2px;
+  margin-bottom: 16px;
+}
+
+// ── Material overrides ─────────────────────────────────────────────────────
+.mdc-card,
+.mat-mdc-card {
+  background: $dark-surface !important;
+  border: 1px solid $dark-border !important;
+  color: $text-primary !important;
+}
+
+.mat-mdc-chip {
+  background: #21262d !important;
+  color: #79c0ff !important;
+  border: 1px solid $dark-border !important;
+}
+
+// ── Scrollbar ─────────────────────────────────────────────────────────────
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #0d1117; }
+::-webkit-scrollbar-thumb { background: $dark-border; border-radius: 4px; }
